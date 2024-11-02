@@ -1,0 +1,62 @@
+/*
+  ===========================
+          Start NavBar
+  ===========================
+*/
+
+@media (max-width: 992px) {
+  nav .navbar-collapse .navbar-nav {
+    background-color: white;
+  }
+
+  nav .navbar-collapse .navbar-nav .nav-item {
+    padding: 5px !important;
+    text-align: center;
+  }
+
+  nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: #000 !important;
+  }
+
+  nav .navbar-toggler {
+    border: none;
+  }
+
+  nav .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  nav .open-menu {
+    color: white;
+  }
+}
+
+/*
+  ===========================
+          End NavBar
+  ===========================
+*/
+
+/*
+  ===========================
+          Start About
+  ===========================
+*/
+@media (max-width: 992px) {
+  .about picture{
+    margin-bottom: 50px;
+  }
+
+  .about picture img{
+    width: 90%;
+    position: relative;
+    left: 4%;
+  }
+}
+
+
+/*
+  ===========================
+          End About
+  ===========================
+*/

@@ -1,0 +1,549 @@
+:root {
+  --heading-font: "heading", sans-serif;
+  --main-font: "main-font", sans-serif;
+}
+
+/* Montserrat */
+@font-face {
+  font-family: "heading";
+  src: url(../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+/* Poppins */
+@font-face {
+  font-family: "main-font";
+  src: url(../Fonts/Poppins/Poppins-Regular.ttf);
+}
+
+body {
+  height: 100000px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:where(.services, .portfolio) header {
+  width: fit-content;
+  margin: auto;
+}
+
+:where(.services, .portfolio) header h2 {
+  font-family: var(--heading-font);
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 900;
+  position: relative;
+  z-index: 4;
+}
+
+:where(.services, .portfolio) header h2::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+
+/* 
+  ================================
+            Start Navbar
+  ================================
+*/
+
+nav a > h1 {
+  font-family: var(--heading-font);
+  font-size: 18px;
+  line-height: 25.5px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+nav .navbar-collapse .nav-item .nav-link {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* 
+  ================================
+            End Navbar
+  ================================
+*/
+
+/* 
+  ================================
+            Start Header
+  ================================
+*/
+header.main-header {
+  background-image: url(../imgs/bg.jpg);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+header .caption h2 {
+  font-family: var(--heading-font);
+  font-size: 50px;
+  line-height: 55px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+header .caption p {
+  font-family: var(--heading-font);
+  font-size: 60px;
+  line-height: 72px;
+  padding: 12px 0;
+  font-weight: 200;
+}
+
+header .social-icon {
+  margin-top: 30px;
+}
+
+header .social-icon li {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.animated .typewriter {
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 400;
+}
+.animated .typewriter::before {
+  content: "";
+  border-right: 5px solid white;
+  animation: blink 0.5s infinite, typing 20s infinite;
+}
+
+@keyframes blink {
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typing {
+  0%,
+  19.98%,
+  38.85%,
+  100% {
+    content: "De";
+  }
+  1.11%,
+  18.87% {
+    content: "Dev";
+  }
+  2.22%,
+  17.76% {
+    content: "Deve";
+  }
+  3.33%,
+  16.65% {
+    content: "Devel";
+  }
+  4.44%,
+  15.54% {
+    content: "Develo";
+  }
+  5.55%,
+  14.43% {
+    content: "Develop";
+  }
+  6.66%,
+  13.32% {
+    content: "Develope";
+  }
+  7.77%,
+  8.88%,
+  9.99%,
+  11.1%,
+  12.21% {
+    content: "Developer";
+  }
+  21.09%,
+  37.74% {
+    content: "Des";
+  }
+  22.2%,
+  36.63% {
+    content: "Desi";
+  }
+  23.31%,
+  35.52% {
+    content: "Desig";
+  }
+  24.42%,
+  34.41% {
+    content: "Design";
+  }
+  25.53%,
+  33.3% {
+    content: "Designe";
+  }
+  26.64%,
+  28.86%,
+  29.97%,
+  31.08%,
+  32.19% {
+    content: "Designer";
+  }
+  39.96% {
+    content: "D";
+  }
+  41.09%,
+  67.71%,
+  97.68% {
+    content: "";
+  }
+  42.18%,
+  66.6% {
+    content: "F";
+  }
+  43.29%,
+  65.49% {
+    content: "Fr";
+  }
+  44.4%,
+  64.38% {
+    content: "Fre";
+  }
+  45.51%,
+  63.27% {
+    content: "Free";
+  }
+  46.62%,
+  62.16% {
+    content: "Freel";
+  }
+  47.73%,
+  61.05% {
+    content: "Freela";
+  }
+  48.84%,
+  59.94% {
+    content: "Freelan";
+  }
+  49.95%,
+  58.83% {
+    content: "Freelanc";
+  }
+  51.06%,
+  57.72% {
+    content: "Freelance";
+  }
+  52.17%,
+  53.28%,
+  54.39%,
+  55.5%,
+  56.61% {
+    content: "Freelancer";
+  }
+  68.82%,
+  96.57% {
+    content: "P";
+  }
+  69.93%,
+  95.46% {
+    content: "Ph";
+  }
+  71.04%,
+  94.35% {
+    content: "Pho";
+  }
+  72.15%,
+  93.24% {
+    content: "Phot";
+  }
+  73.26%,
+  92.13% {
+    content: "Photo";
+  }
+  74.37%,
+  91.02% {
+    content: "Photog";
+  }
+  75.48%,
+  89.91% {
+    content: "Photogr";
+  }
+  76.59%,
+  88.8% {
+    content: "Photogra";
+  }
+  77.7%,
+  87.69% {
+    content: "Photograp";
+  }
+  78.81%,
+  86.58% {
+    content: "Photograph";
+  }
+  79.92%,
+  85.47% {
+    content: "Photographe";
+  }
+  81.03%,
+  82.14%,
+  83.25%,
+  84.36% {
+    content: "Photographer";
+  }
+  98.79% {
+    content: "D";
+  }
+}
+
+/* 
+  ================================
+            End Header
+  ================================
+*/
+
+/* 
+  ================================
+            Start About
+  ================================
+*/
+.about picture img {
+  width: 100%;
+}
+.about picture::after {
+  content: "";
+  background-image: url(../imgs/dots.png);
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: -3%;
+  bottom: 6%;
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+.about .content .title h2 {
+  font-family: var(--heading-font);
+  font-size: 30px;
+  line-height: 33px;
+  margin-bottom: 5px;
+  font-weight: 800;
+}
+
+.about .content .title p {
+  color: #999;
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.about .content p {
+  color: #748182;
+  font-family: var(--main-font);
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.about .content p > span {
+  font-weight: 700;
+}
+
+.about .prog .progress {
+  height: 1.8rem;
+}
+
+.about .prog .progress .progress-bar {
+  font-family: var(--heading-font);
+  font-size: 13px;
+  line-height: 14.3px;
+  font-weight: 500;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  text-transform: capitalize;
+}
+
+.about .btn {
+  transition-duration: 0.3s;
+}
+
+.about .spacial:hover {
+  color: #000;
+  background-color: transparent;
+}
+
+/* 
+  ================================
+            End About
+  ================================
+*/
+
+/* 
+  ================================
+          Start Services
+  ================================
+*/
+
+.services {
+  background-color: #f7f7f7;
+}
+
+.services .cards .item .icon {
+  background-color: rgb(244, 244, 244);
+  width: 65px;
+  height: 65px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.services .cards .item:hover .icon {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.services .cards .item h2 {
+  color: #343434;
+  font-size: 18px;
+  line-height: 19.8px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-family: var(--heading-font);
+}
+
+.services .cards .item p {
+  color: #748182;
+  font-size: 14px;
+  line-height: 22.4px;
+  word-spacing: 2px;
+  font-weight: 400;
+  font-family: var(--main-font);
+}
+
+/* 
+  ================================
+          End Services
+  ================================
+*/
+
+/* 
+  ================================
+          Start Portfolio
+  ================================
+*/
+
+.portfolio .links ul li {
+  color: #222;
+  font-family: var(--main-font);
+  line-height: 22.8px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.portfolio .cards .item .inner .overlay {
+  position: absolute;
+  top: 3%;
+  left: 0;
+  bottom: -3%;
+  right: 0;
+  opacity: 0;
+  transition: all 0.3s linear;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.portfolio .cards .item .inner:hover .overlay {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.portfolio .cards .item .inner .overlay span {
+  font-size: 12px;
+  line-height: 13.2px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: margin-bottom 0.3s linear;
+}
+
+.portfolio .cards .item .inner:hover .overlay span {
+  margin-bottom: 5px;
+}
+
+.portfolio .cards .item .inner .overlay ul li {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  transition: background 0.3s linear, color 0.3s linear;
+}
+.portfolio .cards .item .inner .overlay ul li:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.nav-pills .nav-item {
+  padding: 10px;
+}
+
+.nav-pills .nav-link {
+  color: #000;
+  background-color: transparent;
+  position: relative;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+.nav-pills .nav-link::after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #000;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s linear;
+}
+
+.nav-pills .nav-link.active::after {
+  width: 100%;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #000;
+  background-color: transparent;
+}
+
+/* 
+  ================================
+          End Portfolio
+  ================================
+*/
