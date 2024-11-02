@@ -1,6 +1,7 @@
 :root {
   --heading-font: "heading", sans-serif;
   --main-font: "main-font", sans-serif;
+  overflow-x: hidden;
 }
 
 /* Montserrat */
@@ -15,15 +16,6 @@
   src: url(../Fonts/Poppins/Poppins-Regular.ttf);
 }
 
-body {
-  height: 100000px;
-}
-
-.container {
-  width: 80%;
-  margin: auto;
-}
-
 ul {
   list-style: none;
 }
@@ -32,12 +24,12 @@ a {
   text-decoration: none;
 }
 
-:where(.services, .portfolio) header {
+:where(.services, .portfolio, .slider, .our-team, .contact) header {
   width: fit-content;
   margin: auto;
 }
 
-:where(.services, .portfolio) header h2 {
+:where(.services, .portfolio, .slider, .our-team, .contact) header h2 {
   font-family: var(--heading-font);
   font-size: 40px;
   line-height: 44px;
@@ -46,7 +38,7 @@ a {
   z-index: 4;
 }
 
-:where(.services, .portfolio) header h2::after {
+:where(.services, .portfolio, .slider, .our-team, .contact) header h2::after {
   content: "";
   width: 100%;
   height: 30px;
@@ -131,7 +123,7 @@ header .social-icon li {
 .animated .typewriter::before {
   content: "";
   border-right: 5px solid white;
-  animation: blink 0.5s infinite, typing 20s infinite;
+  animation: blink 0.5s infinite, typing 12s infinite;
 }
 
 @keyframes blink {
@@ -142,172 +134,132 @@ header .social-icon li {
 
 @keyframes typing {
   0%,
-  19.98%,
-  38.85%,
+  26.46%,
+  49.98%,
   100% {
     content: "De";
   }
-  1.11%,
-  18.87% {
+  1.47%,
+  24.99% {
     content: "Dev";
   }
-  2.22%,
-  17.76% {
+  2.94%,
+  23.52% {
     content: "Deve";
   }
-  3.33%,
-  16.65% {
+  4.41%,
+  22.5% {
     content: "Devel";
   }
-  4.44%,
-  15.54% {
+  5.88%,
+  20.58% {
     content: "Develo";
   }
-  5.55%,
-  14.43% {
+  7.35%,
+  19.11% {
     content: "Develop";
   }
-  6.66%,
-  13.32% {
+  8.82%,
+  17.64% {
     content: "Develope";
   }
-  7.77%,
-  8.88%,
-  9.99%,
-  11.1%,
-  12.21% {
+  10.29%,
+  11.76%,
+  13.23%,
+  14.7%,
+  16.17% {
     content: "Developer";
   }
-  21.09%,
-  37.74% {
+  27.93%,
+  48.51% {
     content: "Des";
   }
-  22.2%,
-  36.63% {
+  29.4%,
+  47.04% {
     content: "Desi";
   }
-  23.31%,
-  35.52% {
+  30.87%,
+  45.57% {
     content: "Desig";
   }
-  24.42%,
-  34.41% {
+  32.34%,
+  44.1% {
     content: "Design";
   }
-  25.53%,
-  33.3% {
+  33.81%,
+  42.63% {
     content: "Designe";
   }
-  26.64%,
-  28.86%,
-  29.97%,
-  31.08%,
-  32.19% {
+  35.28%,
+  36.75%,
+  38.22%,
+  39.69%,
+  41.16% {
     content: "Designer";
   }
-  39.96% {
+  51.45%,
+  98.49% {
     content: "D";
   }
-  41.09%,
-  67.71%,
-  97.68% {
+  52.92%,
+  95.55%,
+  97.2% {
     content: "";
   }
-  42.18%,
-  66.6% {
-    content: "F";
-  }
-  43.29%,
-  65.49% {
-    content: "Fr";
-  }
-  44.4%,
-  64.38% {
-    content: "Fre";
-  }
-  45.51%,
-  63.27% {
-    content: "Free";
-  }
-  46.62%,
-  62.16% {
-    content: "Freel";
-  }
-  47.73%,
-  61.05% {
-    content: "Freela";
-  }
-  48.84%,
-  59.94% {
-    content: "Freelan";
-  }
-  49.95%,
-  58.83% {
-    content: "Freelanc";
-  }
-  51.06%,
-  57.72% {
-    content: "Freelance";
-  }
-  52.17%,
-  53.28%,
   54.39%,
-  55.5%,
-  56.61% {
-    content: "Freelancer";
+  94.08% {
+    content: "L";
   }
-  68.82%,
-  96.57% {
-    content: "P";
+  55.86%,
+  92.61% {
+    content: "La";
   }
-  69.93%,
-  95.46% {
-    content: "Ph";
+  57.33%,
+  91.14% {
+    content: "Lar";
   }
-  71.04%,
-  94.35% {
-    content: "Pho";
+  58.8%,
+  91.14% {
+    content: "Larr";
   }
-  72.15%,
-  93.24% {
-    content: "Phot";
+  60.27%,
+  89.67% {
+    content: "Larry";
   }
-  73.26%,
-  92.13% {
-    content: "Photo";
+  61.74%,
+  88.2% {
+    content: "Larry ";
   }
-  74.37%,
-  91.02% {
-    content: "Photog";
+  63.21%,
+  86.73% {
+    content: "Larry D";
   }
-  75.48%,
-  89.91% {
-    content: "Photogr";
+  64.68%,
+  85.26% {
+    content: "Larry Da";
   }
-  76.59%,
-  88.8% {
-    content: "Photogra";
+  66.15%,
+  83.79% {
+    content: "Larry Dan";
   }
-  77.7%,
-  87.69% {
-    content: "Photograp";
+  67.62%,
+  82.32% {
+    content: "Larry Dani";
   }
-  78.81%,
-  86.58% {
-    content: "Photograph";
+  69.09%,
+  80.85% {
+    content: "Larry Danie";
   }
-  79.92%,
-  85.47% {
-    content: "Photographe";
+  70.56%,
+  79.83% {
+    content: "Larry Daniel";
   }
-  81.03%,
-  82.14%,
-  83.25%,
-  84.36% {
-    content: "Photographer";
-  }
-  98.79% {
-    content: "D";
+  72.03%,
+  73.5%,
+  74.97%,
+  76.44%,
+  77.91% {
+    content: "Larry Daniels";
   }
 }
 
@@ -545,5 +497,281 @@ header .social-icon li {
 /* 
   ================================
           End Portfolio
+  ================================
+*/
+
+/* 
+  ================================
+          Start Slider
+  ================================
+*/
+
+.slider {
+  background-color: #f7f7f7;
+}
+
+.slider .caption img {
+  width: 10%;
+}
+
+.slider .caption p {
+  font-family: var(--main-font);
+  font-size: 15px;
+  line-height: 24px;
+  word-spacing: 2px;
+  font-weight: 400;
+}
+
+.slider .caption h5 {
+  color: #343434;
+  font-family: var(--heading-font);
+  font-size: 16x;
+  line-height: 17.6px;
+  margin: 30px 0 5px;
+  font-weight: 600;
+}
+
+.slider .caption h4 {
+  color: #888;
+  font-family: var(--main-font);
+  font-size: 12px;
+  line-height: 17.14px;
+  margin: 0 0 30px;
+  font-weight: 600;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(214, 214, 214);
+  margin-right: 10px;
+}
+
+.carousel-indicators [data-bs-target]:hover {
+  background-color: #889891;
+}
+
+/* 
+  ================================
+          End Slider
+  ================================
+*/
+
+/* 
+  ================================
+          Start Counter
+  ================================
+*/
+
+.stats-section {
+  text-align: center;
+  padding: 50px 0;
+}
+.stats-section .stat {
+  margin-bottom: 30px;
+}
+.stats-section .stat-icon {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.stats-section .stat-number {
+  font-family: var(--heading-font);
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: 900;
+}
+.stats-section .stat-label {
+  font-family: var(--main-font);
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #748182;
+}
+
+/* 
+  ================================
+          End Counter
+  ================================
+*/
+
+/* 
+  ================================
+          Start Out-Team
+  ================================
+*/
+
+.our-team {
+  background-color: #f7f7f7;
+}
+.our-team .title {
+  background-color: #5b5b5b;
+}
+
+.our-team .team-member .inner {
+  overflow: hidden;
+}
+
+.our-team .team-member img {
+  transition: transform 0.3s linear;
+  width: 100%;
+}
+
+.our-team .team-member .inner:hover img {
+  transform: scale(1.1);
+}
+
+.our-team .team-member .title h2 {
+  font-family: var(--heading-font);
+  font-size: 25px;
+  line-height: 27.5px;
+  margin: 0 0 5px;
+  font-weight: 500;
+}
+
+.our-team .team-member .title p {
+  font-family: var(--heading-font);
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.our-team .inner .overlay {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  inset: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(0deg);
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 5px;
+  transition: transform 0.5s linear, opacity 0.5s linear;
+}
+
+.our-team .team-member:hover .overlay {
+  transform: rotateY(360deg);
+  opacity: 1;
+}
+
+.our-team .team-member .overlay ul li {
+  background-color: #000;
+  width: 50px;
+  height: 50px;
+  transition: background-color 0.3s linear;
+  border: 1px solid #000;
+}
+
+.our-team .team-member .overlay ul li a {
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
+  transition: color 0.3s linear;
+}
+
+.our-team .team-member .overlay ul li:hover {
+  background-color: white;
+}
+
+.our-team .team-member .overlay ul li:hover a {
+  color: #000;
+}
+/* 
+  ================================
+          End Out-Team
+  ================================
+*/
+
+/* 
+  ================================
+          Start Contact-Us
+  ================================
+*/
+
+.contact form :is(input, textarea) {
+  background-color: #f4f4f4;
+  color: #343434;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  outline: none;
+  border: 0;
+  padding: 10px;
+  resize: none;
+}
+
+.contact .btn {
+  width: fit-content;
+  font-size: 15px;
+  line-height: 1.1606rem;
+  padding: 10px 40px;
+}
+
+.contact .btn:hover {
+  color: #000;
+  background-color: white;
+}
+
+.contact .contact-info .inner .icon {
+  font-size: 25px;
+  line-height: 60px;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(244, 244, 244);
+  border-radius: 50%;
+  font-family: var(--main-font);
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.contact .contact-info .inner h6 {
+  font-family: var(--heading-font);
+  font-size: 16px;
+  line-height: 17.6px;
+  font-weight: 700;
+}
+
+.contact .contact-info .inner p {
+  color: #748182;
+  font-family: var(--main-font);
+  line-height: 24px;
+  font-size: 15px;
+}
+
+.contact .contact-info .inner:hover .icon {
+  background-color: #000;
+  color: white;
+}
+
+/* 
+  ================================
+          End Contact-Us
+  ================================
+*/
+
+/* 
+  ================================
+          Start Footer
+  ================================
+*/
+
+footer {
+  background-color: #1c1c1c;
+}
+
+footer p {
+  font-family: var(--main-font);
+  font-size: 13px;
+  line-height: 20.8px;
+  word-spacing: 2px;
+  color: #748182;
+}
+
+/* 
+  ================================
+          Start Footer
   ================================
 */
