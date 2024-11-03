@@ -54,7 +54,7 @@ a {
   z-index: -1;
 }
 
-.landing-page{
+.landing-page {
   position: fixed;
   inset: 0;
   display: block;
@@ -64,13 +64,12 @@ a {
 }
 
 @keyframes landing {
-  0%{
+  0% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
     display: none;
-    
   }
 }
 
@@ -187,6 +186,7 @@ header.main-header {
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
   background-size: cover;
+  background-position: 0px 0px;
 }
 
 header .caption h2 {
@@ -420,7 +420,7 @@ header .social-icon li {
 
 .about .prog .progress {
   height: 1.4rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 7px inset
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 7px inset;
 }
 
 .about .prog .progress .progress-bar {
@@ -748,7 +748,7 @@ header .social-icon li {
   opacity: 0;
   transform: rotateY(0deg) scale(0.5);
   background-color: rgba(255, 255, 255, 0.95);
-  transition: opacity 0.5s linear ,transform 0.5s linear;
+  transition: opacity 0.5s linear, transform 0.5s linear;
 }
 
 .our-team .team-member:hover .overlay {
