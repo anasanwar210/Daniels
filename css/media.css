@@ -43,12 +43,11 @@
   ===========================
 */
 
-@media (max-width:597px){
-  header .animated p > span{
+@media (max-width: 597px) {
+  header .animated p > span {
     display: block;
   }
 }
-
 
 /*
   ===========================
@@ -97,9 +96,15 @@
     left: 8%;
     bottom: -6%;
   }
-
+}
 /*
   ===========================
           End About
   ===========================
 */
+
+@media (min-width: 992px){
+  .contact .container{
+    width: 65%;
+  }
+}

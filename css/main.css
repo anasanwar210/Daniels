@@ -54,6 +54,26 @@ a {
   z-index: -1;
 }
 
+.landing-page{
+  position: fixed;
+  inset: 0;
+  display: block;
+  background-color: #fff;
+  z-index: 1001;
+  animation: landing 2s forwards 1s;
+}
+
+@keyframes landing {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+    
+  }
+}
+
 /* 
   ================================
             Start Navbar
@@ -96,10 +116,6 @@ a {
 .main-nav .navbar-collapse .nav-item .nav-link:hover::after {
   width: 70%;
 }
-
-/* .main-nav .navbar-nav .nav-link:has[class="active"] :hover{
-  border-bottom: 0;
-} */
 
 .main-nav .navbar-nav .nav-link.active::before {
   content: "";
@@ -403,7 +419,8 @@ header .social-icon li {
 }
 
 .about .prog .progress {
-  height: 1.8rem;
+  height: 1.4rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 7px inset
 }
 
 .about .prog .progress .progress-bar {
@@ -731,14 +748,12 @@ header .social-icon li {
   opacity: 0;
   transform: rotateY(0deg) scale(0.5);
   background-color: rgba(255, 255, 255, 0.95);
-  transition: all 0.5s linear;
+  transition: opacity 0.5s linear ,transform 0.5s linear;
 }
 
 .our-team .team-member:hover .overlay {
-  width: 100%;
-  height: 100%;
   opacity: 1;
-  transform: rotateY(360deg);
+  transform: rotateY(360deg) scale(1);
 }
 
 .our-team .team-member .overlay ul li {

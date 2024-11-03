@@ -6,12 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Bootstrap Exam">
 
-	<!-- Montserrat Font -->
-
-
-	<!-- Poppins Font -->
-
-
 	<!-- For Site Tab -->
 	<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
 	<title>Daniels</title>
@@ -25,11 +19,19 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
 
+
+	<div class="landing-page">
+		<div class="icon vh-100 d-flex justify-content-center align-items-center">
+			<i class="fa-solid fa-circle-notch fa-spin fa-7x"></i>
+		</div>
+	</div>
+
 	<!-- 
 	============================
 					Start NavBar
 	============================
 	-->
+
 	<nav id="navbar-example" class="main-nav navbar navbar-expand-lg position-absolute w-100">
 		<div class="container-fluid container-md">
 			<a class="navbar-brand text-uppercase" href="#home" aria-label="home">
@@ -72,7 +74,6 @@
 						End NavBar
 		============================
 	-->
-
 	<!-- 
 		============================
 						Start Header
@@ -83,7 +84,8 @@
 		<header id="home"
 			class="main-header vh-100 text-white d-flex justify-content-center align-items-center position-relative">
 			<div class="inner w-100">
-				<div class="caption w-100 text-capitalize d-flex justify-content-center align-items-center flex-column text-center">
+				<div
+					class="caption w-100 text-capitalize d-flex justify-content-center align-items-center flex-column text-center">
 					<h2>hello</h2>
 					<div class="animated">
 						<p>i am <span class="typewriter"></span></p>
@@ -150,25 +152,23 @@
 			</div>
 		</nav>
 
-
-
 		<!-- 
-		============================
-					End Header
-		============================
+	============================
+				End Header
+	============================
 	-->
 
 		<!--
-	==============================
-					Start Main
-	============================== 
+==============================
+			Start Main
+============================== 
 -->
 
 		<main>
 			<!-- 
-		============================
-						Start About
-		============================
+	============================
+				Start About
+	============================
 	-->
 
 			<section id="about" class="about py-5">
@@ -190,21 +190,21 @@
 							<div class="prog">
 								<div class="progress mb-4" role="progressbar" aria-label="Success example" aria-valuenow="25"
 									aria-valuemin="0" aria-valuemax="100">
-									<div class="progress-bar bg-dark text-white" style="width: 95%">
+									<div class="progress-bar bg-dark text-white" style="width: 95%;border-radius: 5px;">
 										<span>wep design</span>
 										<span>95%</span>
 									</div>
 								</div>
 								<div class="progress mb-4" role="progressbar" aria-label="Info example" aria-valuenow="50"
 									aria-valuemin="0" aria-valuemax="100">
-									<div class="progress-bar bg-dark text-white" style="width: 80%">
+									<div class="progress-bar bg-dark text-white" style="width: 80%;border-radius: 5px;">
 										<span>branding</span>
 										<span>80%</span>
 									</div>
 								</div>
 								<div class="progress mb-4" role="progressbar" aria-label="Warning example" aria-valuenow="75"
 									aria-valuemin="0" aria-valuemax="100">
-									<div class="progress-bar bg-dark text-white" style="width: 90%">
+									<div class="progress-bar bg-dark text-white" style="width: 90%;border-radius: 5px;">
 										<span>development</span>
 										<span>90%</span>
 									</div>
@@ -220,15 +220,15 @@
 			</section>
 
 			<!-- 
-		============================
-						End About
-		============================
+	============================
+				End About
+	============================
 	-->
 
 			<!-- 
-		============================
-					Start Services
-		============================
+	============================
+			Start Services
+	============================
 	-->
 
 			<section id="services" class="services py-5">
@@ -314,15 +314,14 @@
 			</section>
 
 			<!-- 
-		============================
-					End Services
-		============================
+	============================
+			End Services
+	============================
 	-->
-
 			<!-- 
-		============================
-					Start Portfolio
-		============================
+	============================
+			Start Portfolio
+	============================
 	-->
 
 			<section id="portfolio" class="portfolio py-5">
@@ -606,159 +605,19 @@
 									</div>
 								</div>
 							</div>
-							<!-- <ul class="ps-0 w-25 m-auto d-flex justify-content-between nav nav-pills mb-3" id="pills-tab"
-						role="tablist">
-						<li class="nav-item" role="presentation">
-							<button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
-								type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link active" id="pills-brand-tab" data-bs-toggle="pill" data-bs-target="#pills-brand"
-								type="button" role="tab" aria-controls="pills-brand" aria-selected="false">Brand</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link active" id="pills-design-tab" data-bs-toggle="pill" data-bs-target="#pills-design"
-								type="button" role="tab" aria-controls="pills-design" aria-selected="false">Design</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link active" id="pills-graphic-tab" data-bs-toggle="pill"
-								data-bs-target="#pills-graphic" type="button" role="tab" aria-controls="pills-graphic"
-								aria-selected="false">Graphic</button>
-						</li>
-					</ul>
-				</div>
-				<div class="items tab-content" id="pills-tabContent">
-					<div class="row tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
-						<div class="item col-md-6 col-lg-4 gy-4">
-							<div class="inner overflow-hidden position-relative">
-								<picture>
-									<img class="w-100" src="imgs/portfolio/1.jpg" alt="portfolio">
-								</picture>
-								<div class="overlay m-1 d-flex justify-content-center align-items-center flex-column">
-									<span class="text-uppercase">wep design</span>
-									<ul class="d-flex justify-content-center align-items-center ps-0">
-										<li class="m-1 rounded-circle d-flex justify-content-center align-items-center">
-											<i class="fa fa-chain-broken"></i>
-										</li>
-										<li class="m-1 rounded-circle d-flex justify-content-center align-items-center">
-											<i class="fa fa-search-plus"></i>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="item col-md-6 col-lg-4 gy-4">
-							<div class="inner overflow-hidden position-relative">
-								<picture>
-									<img class="w-100" src="imgs/portfolio/2.jpg" alt="portfolio">
-								</picture>
-								<div class="overlay m-1 d-flex justify-content-center align-items-center flex-column">
-									<span class="text-uppercase">wep design</span>
-									<ul class="d-flex justify-content-center align-items-center ps-0">
-										<li class="m-1 rounded-circle d-flex justify-content-center align-items-center">
-											<i class="fa fa-chain-broken"></i>
-										</li>
-										<li class="m-1 rounded-circle d-flex justify-content-center align-items-center">
-											<i class="fa fa-search-plus"></i>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="item col-md-6 col-lg-4 gy-4">
-							<div class="inner overflow-hidden position-relative">
-								<picture>
-									<img class="w-100" src="imgs/portfolio/3.jpg" alt="portfolio">
-								</picture>
-								<div class="overlay m-1 d-flex justify-content-center align-items-center flex-column">
-									<span class="text-uppercase">wep design</span>
-									<ul class="d-flex justify-content-center align-items-center ps-0">
-										<li class="m-1 rounded-circle d-flex justify-content-center align-items-center">
-											<i class="fa fa-chain-broken"></i>
-										</li>
-										<li class="m-1 rounded-circle d-flex justify-content-center align-items-center">
-											<i class="fa fa-search-plus"></i>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="item col-md-6 col-lg-4 gy-4">
-							<div class="inner overflow-hidden position-relative">
-								<picture>
-									<img class="w-100" src="imgs/portfolio/4.jpg" alt="portfolio">
-								</picture>
-								<div class="overlay m-1 d-flex justify-content-center align-items-center flex-column">
-									<span class="text-uppercase">wep design</span>
-									<ul class="d-flex justify-content-center align-items-center ps-0">
-										<li class="m-1 rounded-circle d-flex justify-content-center align-items-center">
-											<i class="fa fa-chain-broken"></i>
-										</li>
-										<li class="m-1 rounded-circle d-flex justify-content-center align-items-center">
-											<i class="fa fa-search-plus"></i>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="item col-md-6 col-lg-4 gy-4">
-							<div class="inner overflow-hidden position-relative">
-								<picture>
-									<img class="w-100" src="imgs/portfolio/5.jpg" alt="portfolio">
-								</picture>
-								<div class="overlay m-1 d-flex justify-content-center align-items-center flex-column">
-									<span class="text-uppercase">wep design</span>
-									<ul class="d-flex justify-content-center align-items-center ps-0">
-										<li class="m-1 rounded-circle d-flex justify-content-center align-items-center">
-											<i class="fa fa-chain-broken"></i>
-										</li>
-										<li class="m-1 rounded-circle d-flex justify-content-center align-items-center">
-											<i class="fa fa-search-plus"></i>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="item col-md-6 col-lg-4 gy-4">
-							<div class="inner overflow-hidden position-relative">
-								<picture>
-									<img class="w-100" src="imgs/portfolio/6.jpg" alt="portfolio">
-								</picture>
-								<div class="overlay m-1 d-flex justify-content-center align-items-center flex-column">
-									<span class="text-uppercase">wep design</span>
-									<ul class="d-flex justify-content-center align-items-center ps-0">
-										<li class="m-1 rounded-circle d-flex justify-content-center align-items-center">
-											<i class="fa fa-chain-broken"></i>
-										</li>
-										<li class="m-1 rounded-circle d-flex justify-content-center align-items-center">
-											<i class="fa fa-search-plus"></i>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tab-pane fade" id="pills-brand" role="tabpanel" aria-labelledby="pills-brand-tab" tabindex="0">
-					</div>
-					<div class="tab-pane fade" id="pills-design" role="tabpanel" aria-labelledby="pills-design-tab" tabindex="0">...
-					</div>
-					<div class="tab-pane fade" id="pills-graphic" role="tabpanel" aria-labelledby="pills-graphic-tab" tabindex="0">...
-					</div>
-				</div> -->
 						</div>
 					</div>
 			</section>
 
 			<!-- 
-		============================
-					End Portfolio
-		============================
+	============================
+			End Portfolio
+	============================
 	-->
-
 			<!-- 
-		============================
-					Start Slider
-		============================
+	============================
+			Start Slider
+	============================
 	-->
 
 			<section id="slider" class="slider py-5">
@@ -812,15 +671,14 @@
 			</section>
 
 			<!-- 
-		============================
-					End Slider
-		============================
+	============================
+			End Slider
+	============================
 	-->
-
 			<!-- 
-		============================
-					Start Counter
-		============================
+	============================
+			Start Counter
+	============================
 	-->
 
 			<section id="counter" class="counter py-5">
@@ -863,7 +721,6 @@
 					End Counter
 		============================
 	-->
-
 			<!-- 
 		============================
 					Start Out-Team
